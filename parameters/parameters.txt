@@ -1,0 +1,8 @@
+{"fixed holding cost":1000,
+"variable holding cost":5,
+"fixed production cost":1000,
+"variable production cost":2,
+"fixed backlog cost":10000,
+"variable backlog cost":100,
+"maximum storing capacity":1000000,
+"lambda":0.9}
