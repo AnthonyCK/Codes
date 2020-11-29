@@ -74,7 +74,7 @@ def all_actions(state, params):
 def next_states_gen(state, action, params):
     res = []
     bt = (state // params['max D']) % params['max s']
-    invt = state % (params['max D'] * params['max b'])
+    invt = state // (params['max D'] * params['max b'])
     for dt in range(params['max D']):
         invtp1 = max(invt - bt + action - dt, 0)
         if invtp1 >= params['max s']:
@@ -120,7 +120,7 @@ if __name__ == "__main__":
     # tot = tpd.sum(axis=1)
     # tpd = tpd/tot[:,None]
     # tpd = MDP.gen_tpmModel1(2/params2['M'], 1, 1e-7, params2['M'], params2['max D'])
-    tpd = MDP.gen_tpmModel2(2/params2['M'], 1, 1e-7, 1e-7, 1e5, params2['M'], params2['max D'])
+    tpd = MDP.gen_tpmModel2(1/(2*params2['M']), 1, 1e-7, 1e-7, 1e5, params2['M'], params2['max D'])
 
     print(tpd)
 

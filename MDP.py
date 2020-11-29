@@ -73,17 +73,17 @@ def gen_tpmModel2(a, b, c, d, e, M, n):
 
 
 def main():
-    tpm = gen_tpmModel1(0.02, 1, 0.01, 100, 10)  
+    tpm = gen_tpmModel1(0.005, 1, 10, 100, 10)  
     print('Model 1:')
     for i in range(len(tpm)):
         print(sum(tpm[i]))
-    np.save('TPM', tpm)  
+    # np.save('TPM', tpm)  
     print(tpm)
-    tpm = gen_tpmModel2(0.02, 1, 0.01, 0.01, 5, 100, 10)
+    tpm = gen_tpmModel2(0.005, 1, 0.01, 0.01, 5, 100, 10)
     print('Model 2:')
     for i in range(len(tpm)):
         print(sum(tpm[i]))
-    np.save('TPM_2', tpm)  
+    # np.save('TPM_2', tpm)  
     print(tpm)
 
 if __name__ == '__main__':
