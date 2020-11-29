@@ -1,37 +1,39 @@
 import numpy as np
 import copy
 import MDP
+import Timer
 
 def value_iteration(states, v0, tpd, params, unit, epsilon, lbd):
     v = copy.deepcopy(v0)
     vtm1 = copy.deepcopy(v0)
     action_dict = dict()
     for iteration in range(1000):
-        print(iteration)
-        for state in states:
-            actions = all_actions(state, params)
-            candidate = np.zeros(len(actions))
-            for index, action in enumerate(actions):
-                candidate[index] = cost(state, action, params, unit)
-                next_states = next_states_gen(state, action, params)
-                for nextstate in next_states:
-                    ind = np.where(states == nextstate)[0][0]
-                    candidate[index] += lbd*full_transition_probability(tpd, state, nextstate, params)*v[ind]
-            if len(candidate)>0:
-                ind = np.where(states==state)[0][0]
-                v[ind] = np.min(candidate)
-                action_dict[state] = actions[np.argmin(candidate)]
-            else:
-                ind = np.where(states == state)[0][0]
-                print("state {}".format(state))
-                print(ind)
-                raise Exception("Error!")
+        with Timer.timeblock('Time'):
+            print(iteration)
+            for state in states:
+                actions = all_actions(state, params)
+                candidate = np.zeros(len(actions))
+                for index, action in enumerate(actions):
+                    candidate[index] = cost(state, action, params, unit)
+                    next_states = next_states_gen(state, action, params)
+                    for nextstate in next_states:
+                        ind = np.where(states == nextstate)[0][0]
+                        candidate[index] += lbd*full_transition_probability(tpd, state, nextstate, params)*v[ind]
+                if len(candidate)>0:
+                    ind = np.where(states==state)[0][0]
+                    v[ind] = np.min(candidate)
+                    action_dict[state] = actions[np.argmin(candidate)]
+                else:
+                    ind = np.where(states == state)[0][0]
+                    print("state {}".format(state))
+                    print(ind)
+                    raise Exception("Error!")
 
-        nrm = np.max(np.abs(v-vtm1))
-        if  nrm<= epsilon*(1-lbd)/(2*lbd):
-            break
-        else:
-            vtm1 = copy.deepcopy(v)
+            nrm = np.max(np.abs(v-vtm1))
+            if  nrm<= epsilon*(1-lbd)/(2*lbd):
+                break
+            else:
+                vtm1 = copy.deepcopy(v)
     return v, action_dict
 
 def full_transition_probability(tp_d, st, stp1, setting_params):
@@ -42,7 +44,6 @@ def full_transition_probability(tp_d, st, stp1, setting_params):
     invt = st // (setting_params['max D']*setting_params['max b'])
     invtp1 = stp1 // (setting_params['max D'] * setting_params['max b'])
     if bt*invt == 0 and btp1*invtp1 == 0:
-        #dt = st["s"] - stp1["s"] -st["b"] + stp1["b"] + at
         return  tp_d[dtm1,dt]
     else:
         return  0
@@ -116,23 +117,15 @@ if __name__ == "__main__":
     v_dict = all_states
     v0 = np.zeros(len(all_states))
 
-    # tpd = np.abs(np.random.normal(size=(len(all_states),len(all_states))))
-    # tot = tpd.sum(axis=1)
-    # tpd = tpd/tot[:,None]
     # tpd = MDP.gen_tpmModel1(2/params2['M'], 1, 1e-7, params2['M'], params2['max D'])
     # tpd = MDP.gen_tpmModel2(1/(2*params2['M']), 1, 1e-7, 1e-7, 1e5, params2['M'], params2['max D'])
-    tpd = MDP.gen_tpmModel2(2.7e-9, 1, 216215, 0, 390361, params2['M'], params2['max D'])
+    # tpd = MDP.gen_tpmModel2(2.7e-9, 1, 216215, 0, np.math.sqrt(390361**2+5e13), params2['M'], params2['max D'])
+    tpd = MDP.gen_tpmModel2(2.7e-9, 1, 216215, 0, 2e6, params2['M'], params2['max D'])
 
     print(tpd)
 
     v, ad = value_iteration(all_states, v0, tpd, dict(params2, **params), unit, 0.01, 0.9)
-    # print(v)
+
     print_actions(ad, params2)
-    #print(ad)
-    '''
-    print(params)
-    print(dict(params2,**params))
-    print(all_states)
-    '''
 
 
