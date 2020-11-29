@@ -120,7 +120,8 @@ if __name__ == "__main__":
     # tot = tpd.sum(axis=1)
     # tpd = tpd/tot[:,None]
     # tpd = MDP.gen_tpmModel1(2/params2['M'], 1, 1e-7, params2['M'], params2['max D'])
-    tpd = MDP.gen_tpmModel2(1/(2*params2['M']), 1, 1e-7, 1e-7, 1e5, params2['M'], params2['max D'])
+    # tpd = MDP.gen_tpmModel2(1/(2*params2['M']), 1, 1e-7, 1e-7, 1e5, params2['M'], params2['max D'])
+    tpd = MDP.gen_tpmModel2(2.7e-9, 1, 216215, 0, 390361, params2['M'], params2['max D'])
 
     print(tpd)
 

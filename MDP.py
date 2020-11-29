@@ -54,8 +54,8 @@ def gen_tpmModel2(a, b, c, d, e, M, n):
     TPM: 
         Transition Probability Matrix.
     """
-    if d == 0:
-        raise Exception('Error! d cannot be 0!')
+    # if d == 0:
+    #     raise Exception('Error! d cannot be 0!')
     demand = [i*(M/n) for i in range(n)]
     TPM = np.zeros((n, n))
     for i in range(n):
