@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 import numpy as np
 import scipy.stats
@@ -54,8 +52,6 @@ def gen_tpmModel2(a, b, c, d, e, M, n):
     TPM: 
         Transition Probability Matrix.
     """
-    # if d == 0:
-    #     raise Exception('Error! d cannot be 0!')
     demand = [i*(M/n) for i in range(n)]
     TPM = np.zeros((n, n))
     for i in range(n):
@@ -72,7 +68,7 @@ def gen_tpmModel2(a, b, c, d, e, M, n):
 
 
 
-def main():
+def test():
     tpm = gen_tpmModel1(0.005, 1, 10, 100, 10)  
     print('Model 1:')
     for i in range(len(tpm)):
@@ -87,5 +83,5 @@ def main():
     print(tpm)
 
 if __name__ == '__main__':
-    main()
+    test()
 

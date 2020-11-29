@@ -1,14 +1,29 @@
 import numpy as np
 import copy
-import MDP
-import Timer
+import tpmgenerator
+import timer
+import inference
 
 def value_iteration(states, v0, tpd, params, unit, epsilon, lbd):
+    '''
+    Value Iteration
+    ----
+    Input
+    ----
+    tpd:
+        Transition Probability Matrix of demand
+    lbd:
+        Lambda
+    Output
+    ----
+    v, action_dict
+
+    '''
     v = copy.deepcopy(v0)
     vtm1 = copy.deepcopy(v0)
     action_dict = dict()
     for iteration in range(1000):
-        with Timer.timeblock('Time'):
+        with timer.timeblock('Time'):
             print(iteration)
             for state in states:
                 actions = all_actions(state, params)
@@ -117,14 +132,12 @@ if __name__ == "__main__":
     v_dict = all_states
     v0 = np.zeros(len(all_states))
 
-    # tpd = MDP.gen_tpmModel1(2/params2['M'], 1, 1e-7, params2['M'], params2['max D'])
-    # tpd = MDP.gen_tpmModel2(1/(2*params2['M']), 1, 1e-7, 1e-7, 1e5, params2['M'], params2['max D'])
-    # tpd = MDP.gen_tpmModel2(2.7e-9, 1, 216215, 0, np.math.sqrt(390361**2+5e13), params2['M'], params2['max D'])
-    tpd = MDP.gen_tpmModel2(2.7e-9, 1, 216215, 0, 2e6, params2['M'], params2['max D'])
+    estimate = inference.Estimation(params2['M'], params2['max D'])
+    tpd = tpmgenerator.gen_tpmModel2(estimate['a'], estimate['b'], estimate['c'], 0, estimate['d'], params2['M'], params2['max D'])
 
     print(tpd)
 
-    v, ad = value_iteration(all_states, v0, tpd, dict(params2, **params), unit, 0.01, 0.9)
+    v, ad = value_iteration(all_states, v0, tpd, dict(params2, **params), unit, 0.01, params['lambda'])
 
     print_actions(ad, params2)
 

@@ -1,19 +1,14 @@
-import quandl
 import pandas as pd
 import numpy as np
 import scipy.stats as st
 import statsmodels.api as sm
 import os
-from arch import arch_model
-#from sklearn.decomposition import FactorAnalysis
-#from sklearn.decomposition import PCA
 from sklearn.linear_model import LinearRegression
 
 import matplotlib.pyplot as plt
 
-if __name__ == "__main__":
-    raw_data = pd.read_excel(r'data/michigan-history.xlsx',
-                                  encoding='gb2312').fillna(axis=1,method='ffill')
+def Estimation(M, num_level):
+    raw_data = pd.read_excel(r'data/michigan-history.xlsx').fillna(axis=1,method='ffill')
 
     raw_data['date'] = pd.to_datetime(raw_data['date'])
     raw_data.set_index("date", inplace=True)
@@ -55,4 +50,6 @@ if __name__ == "__main__":
     doc = open("middle-results/inference-results.txt","w")
     print(resdict, file=doc)
     doc.close()
+
+    return resdict
     #print(sigma)
