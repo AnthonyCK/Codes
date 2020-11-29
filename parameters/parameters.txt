@@ -1,5 +1,5 @@
 {"fixed holding cost":1000,
-"variable holding cost":5,
+"variable holding cost":1,
 "fixed production cost":1000,
 "variable production cost":2,
 "fixed backlog cost":10000,

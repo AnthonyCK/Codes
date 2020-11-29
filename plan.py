@@ -1,11 +1,12 @@
 import numpy as np
 import copy
+import MDP
 
 def value_iteration(states, v0, tpd, params, unit, epsilon, lbd):
     v = copy.deepcopy(v0)
     vtm1 = copy.deepcopy(v0)
     action_dict = dict()
-    for iteration in range(100):
+    for iteration in range(1000):
         print(iteration)
         for state in states:
             actions = all_actions(state, params)
@@ -93,36 +94,44 @@ def print_actions(ad, params):
         print("Inventory level {}, backlog {}, demand in last period is {}, action is to produce {}".format(invt, bt, dt, ad[state]))
 
 if __name__ == "__main__":
-     doc1 = open("parameters/parameters.txt","r")
-     params = doc1.read()
-     params = eval(params)
-     doc1.close()
-     doc2 = open("parameters/settings.txt", "r")
-     params2 = doc2.read()
-     params2 = eval(params2)
-     doc2.close()
-     unit = params2["M"]/params2["max s"]
-     all_states = []
-     for dt in range(params2["max D"]):
-         for inv in range(params2["max s"]):
-             for b in range(params2["max b"]):
-                 if inv*b == 0:
-                     one_state = inv*params2["max b"]*params2["max D"]+b*params2["max D"]+ dt
-                     all_states.append(one_state)
-     all_states = np.sort(np.array(all_states))
-     v_dict = all_states
-     v0 = np.zeros(len(all_states))
-     tpd = np.abs(np.random.normal(size=(len(all_states),len(all_states))))
-     tot = tpd.sum(axis=1)
-     tpd = tpd/tot[:,None]
-     v, ad= value_iteration(all_states, v0, tpd, dict(params2,**params), unit, 0.01, 0.9)
-     print(v)
-     print_actions(ad, params2)
-     #print(ad)
-     '''
-     print(params)
-     print(dict(params2,**params))
-     print(all_states)
-'''
+    doc1 = open("parameters/parameters.txt", "r")
+    params = doc1.read()
+    params = eval(params)
+    doc1.close()
+    doc2 = open("parameters/settings.txt", "r")
+    params2 = doc2.read()
+    params2 = eval(params2)
+    doc2.close()
+
+    unit = params2["M"]/params2["max s"]
+    all_states = []
+    for dt in range(params2["max D"]):
+        for inv in range(params2["max s"]):
+            for b in range(params2["max b"]):
+                if inv*b == 0:
+                    one_state = inv*params2["max b"] * \
+                    params2["max D"]+b*params2["max D"] + dt
+                    all_states.append(one_state)
+    all_states = np.sort(np.array(all_states))
+    v_dict = all_states
+    v0 = np.zeros(len(all_states))
+
+    # tpd = np.abs(np.random.normal(size=(len(all_states),len(all_states))))
+    # tot = tpd.sum(axis=1)
+    # tpd = tpd/tot[:,None]
+    # tpd = MDP.gen_tpmModel1(2/params2['M'], 1, 1e-7, params2['M'], params2['max D'])
+    tpd = MDP.gen_tpmModel2(2/params2['M'], 1, 1e-7, 1e-7, 1e5, params2['M'], params2['max D'])
+
+    print(tpd)
+
+    v, ad = value_iteration(all_states, v0, tpd, dict(params2, **params), unit, 0.01, 0.9)
+    # print(v)
+    print_actions(ad, params2)
+    #print(ad)
+    '''
+    print(params)
+    print(dict(params2,**params))
+    print(all_states)
+    '''
 
 
