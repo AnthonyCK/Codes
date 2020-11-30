@@ -46,7 +46,7 @@ def value_iteration(states, v0, tpd, params, unit, epsilon, lbd):
                     ind = np.where(states == state)[0][0]
                     print("state {}".format(state))
                     print(ind)
-                    raise Exception("Error!")
+                    raise Exception("Error! No candidate action!")
 
             nrm = np.max(np.abs(v-vtm1))
             if  nrm<= epsilon*(1-lbd)/(2*lbd):
@@ -152,10 +152,10 @@ def main():
     print(tpd, file=doc)
 
     # Value Iteration
-    v, ad = value_iteration(all_states, v0, tpd, dict(params2, **params), unit, 0.01, params['lambda'])
+    ad = value_iteration(all_states, v0, tpd, dict(params2, **params), unit, 0.01, params['lambda'])
 
     # Print actions for each states
-    print_actions(ad, params2, doc)
+    print_actions(ad[1], params2, doc)
     doc.close()
 
 if __name__ == "__main__":
