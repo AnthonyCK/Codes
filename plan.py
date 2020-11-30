@@ -1,8 +1,12 @@
-import numpy as np
 import copy
-import tpmgenerator
-import timer
+import os
+
+import numpy as np
+
 import inference
+import timer
+import tpmgenerator
+
 
 def value_iteration(states, v0, tpd, params, unit, epsilon, lbd):
     '''
@@ -54,8 +58,8 @@ def value_iteration(states, v0, tpd, params, unit, epsilon, lbd):
 def full_transition_probability(tp_d, st, stp1, setting_params):
     dtm1 = st % (setting_params['max D'])
     dt = stp1 % (setting_params['max D'])
-    bt = (st // setting_params['max D']) % setting_params['max s']
-    btp1 = (stp1 // setting_params['max D']) % setting_params['max s']
+    bt = (st // setting_params['max D']) % setting_params['max b']
+    btp1 = (stp1 // setting_params['max D']) % setting_params['max b']
     invt = st // (setting_params['max D']*setting_params['max b'])
     invtp1 = stp1 // (setting_params['max D'] * setting_params['max b'])
     if bt*invt == 0 and btp1*invtp1 == 0:
@@ -65,7 +69,7 @@ def full_transition_probability(tp_d, st, stp1, setting_params):
 
 def cost(st, at, params, unit):
     c = 0
-    bt = (st // params['max D']) % params['max s']
+    bt = (st // params['max D']) % params['max b']
     invt = st // (params['max D'] * params['max b'])
     if invt + at >0:
         c += (params["fixed holding cost"] + params["variable holding cost"]*unit*(at+invt))
@@ -78,18 +82,19 @@ def cost(st, at, params, unit):
 def all_actions(state, params):
     invt = state // (params['max D'] * params['max b'])
     maxproduce = params["max s"] - invt
-    bt = (state // params['max D']) % params['max s']
+    bt = (state // params['max D']) % params['max b']
     minproduce = max(bt+params['max D']-params['max b'], 0)
     if maxproduce < minproduce:
         print("backlog {}".format(bt))
         print("inventory {}".format(invt))
         print("maxproduce {}".format(maxproduce))
         print("minproduce {}".format(minproduce))
+        raise Exception("Error! maxproduce < minproduce")
     return list(range(minproduce, maxproduce+1))
 
 def next_states_gen(state, action, params):
     res = []
-    bt = (state // params['max D']) % params['max s']
+    bt = (state // params['max D']) % params['max b']
     invt = state // (params['max D'] * params['max b'])
     for dt in range(params['max D']):
         invtp1 = max(invt - bt + action - dt, 0)
@@ -98,18 +103,23 @@ def next_states_gen(state, action, params):
         btp1 = max(bt - invt + dt - action, 0)
         if btp1 >= params['max b']:
             continue
-        res.append(dt+btp1*params['max D']+invtp1*params['max D']*params['max s'])
+        res.append(dt+btp1*params['max D']+invtp1*params['max D']*params['max b'])
 
     return res
 
-def print_actions(ad, params):
+def print_actions(ad, params, doc):
     for state in ad.keys():
         invt = state // (params['max D'] * params['max b'])
-        bt = (state // params['max D']) % params['max s']
-        dt = state % params['max b']
-        print("Inventory level {}, backlog {}, demand in last period is {}, action is to produce {}".format(invt, bt, dt, ad[state]))
+        bt = (state // params['max D']) % params['max b']
+        dt = state % params['max D']
+        print("Inventory level {}, backlog {}, demand in last period is {}, action is to produce {}".format(invt, bt, dt, ad[state]), file=doc)
 
-if __name__ == "__main__":
+@timer.timethis
+def main():
+    """
+    Main
+    """
+    # Load parameters and settings
     doc1 = open("parameters/parameters.txt", "r")
     params = doc1.read()
     params = eval(params)
@@ -118,27 +128,35 @@ if __name__ == "__main__":
     params2 = doc2.read()
     params2 = eval(params2)
     doc2.close()
-
-    unit = params2["M"]/params2["max s"]
+    # Initialize variables
+    unit = params2["M"]/params2["num level"]
     all_states = []
     for dt in range(params2["max D"]):
         for inv in range(params2["max s"]):
             for b in range(params2["max b"]):
                 if inv*b == 0:
-                    one_state = inv*params2["max b"] * \
-                    params2["max D"]+b*params2["max D"] + dt
+                    one_state = inv*params2["max b"]*params2["max D"] + b*params2["max D"] + dt
                     all_states.append(one_state)
     all_states = np.sort(np.array(all_states))
-    v_dict = all_states
     v0 = np.zeros(len(all_states))
+    # Generate transition probability matrix
+    estimate = inference.Estimation(params2['M'], params2['num level'])
+    tpd = tpmgenerator.gen_tpmModel2(estimate['a'], estimate['b'], estimate['c'], 0, estimate['d'], params2['M'], params2['num level'])
 
-    estimate = inference.Estimation(params2['M'], params2['max D'])
-    tpd = tpmgenerator.gen_tpmModel2(estimate['a'], estimate['b'], estimate['c'], 0, estimate['d'], params2['M'], params2['max D'])
+    # Output files
+    dirs = 'results/'
+    if not os.path.exists(dirs):
+        os.makedirs(dirs)
+    doc = open("results/results.txt","w")
+    
+    print(tpd, file=doc)
 
-    print(tpd)
-
+    # Value Iteration
     v, ad = value_iteration(all_states, v0, tpd, dict(params2, **params), unit, 0.01, params['lambda'])
 
-    print_actions(ad, params2)
+    # Print actions for each states
+    print_actions(ad, params2, doc)
+    doc.close()
 
-
+if __name__ == "__main__":
+    main()
