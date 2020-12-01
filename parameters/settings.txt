@@ -1,5 +1,5 @@
-{"outputFile":"results_4_20.txt",
-"M":4e6,
+{"outputFile":"results_2_20_K7.txt",
+"M":2e6,
 "num level":20,
 "max s":20,
 "max b":20,

@@ -164,7 +164,7 @@ def main():
 
     end = time.perf_counter()
     print('\n###### Running Time ######', file = doc)
-    print('{} s'.format(end - start))
+    print('{} s'.format(end - start), file=doc)
     doc.close()
 
 if __name__ == "__main__":

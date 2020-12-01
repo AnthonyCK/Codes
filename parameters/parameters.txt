@@ -1,6 +1,6 @@
 {"fixed holding cost":0,
 "variable holding cost":2.3,
-"fixed production cost":1e5,
+"fixed production cost":1e7,
 "variable production cost":23,
 "fixed backlog cost":0,
 "variable backlog cost":2433,

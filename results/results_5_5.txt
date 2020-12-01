@@ -1,0 +1,61 @@
+###### Transition Probability Matrix ######
+[[1.00000000e+000 0.00000000e+000 0.00000000e+000 0.00000000e+000
+  0.00000000e+000]
+ [4.72271173e-002 9.52772883e-001 0.00000000e+000 0.00000000e+000
+  0.00000000e+000]
+ [9.77838797e-185 5.31264408e-003 9.94687356e-001 0.00000000e+000
+  0.00000000e+000]
+ [0.00000000e+000 9.77838797e-185 5.31264408e-003 9.94687356e-001
+  0.00000000e+000]
+ [0.00000000e+000 0.00000000e+000 8.59032968e-174 4.72271173e-002
+  9.52772883e-001]]
+
+###### Optimal Solutions ######
+Inventory level 0, backlog 0, demand in last period is 0, action is to produce 0
+Inventory level 0, backlog 0, demand in last period is 1, action is to produce 1
+Inventory level 0, backlog 0, demand in last period is 2, action is to produce 2
+Inventory level 0, backlog 0, demand in last period is 3, action is to produce 3
+Inventory level 0, backlog 0, demand in last period is 4, action is to produce 4
+Inventory level 0, backlog 1, demand in last period is 0, action is to produce 1
+Inventory level 0, backlog 1, demand in last period is 1, action is to produce 2
+Inventory level 0, backlog 1, demand in last period is 2, action is to produce 3
+Inventory level 0, backlog 1, demand in last period is 3, action is to produce 4
+Inventory level 0, backlog 1, demand in last period is 4, action is to produce 5
+Inventory level 0, backlog 2, demand in last period is 0, action is to produce 2
+Inventory level 0, backlog 2, demand in last period is 1, action is to produce 3
+Inventory level 0, backlog 2, demand in last period is 2, action is to produce 4
+Inventory level 0, backlog 2, demand in last period is 3, action is to produce 5
+Inventory level 0, backlog 2, demand in last period is 4, action is to produce 5
+Inventory level 0, backlog 3, demand in last period is 0, action is to produce 3
+Inventory level 0, backlog 3, demand in last period is 1, action is to produce 4
+Inventory level 0, backlog 3, demand in last period is 2, action is to produce 5
+Inventory level 0, backlog 3, demand in last period is 3, action is to produce 5
+Inventory level 0, backlog 3, demand in last period is 4, action is to produce 5
+Inventory level 0, backlog 4, demand in last period is 0, action is to produce 4
+Inventory level 0, backlog 4, demand in last period is 1, action is to produce 5
+Inventory level 0, backlog 4, demand in last period is 2, action is to produce 5
+Inventory level 0, backlog 4, demand in last period is 3, action is to produce 5
+Inventory level 0, backlog 4, demand in last period is 4, action is to produce 5
+Inventory level 1, backlog 0, demand in last period is 0, action is to produce 0
+Inventory level 1, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 1, backlog 0, demand in last period is 2, action is to produce 1
+Inventory level 1, backlog 0, demand in last period is 3, action is to produce 2
+Inventory level 1, backlog 0, demand in last period is 4, action is to produce 3
+Inventory level 2, backlog 0, demand in last period is 0, action is to produce 0
+Inventory level 2, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 2, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 2, backlog 0, demand in last period is 3, action is to produce 1
+Inventory level 2, backlog 0, demand in last period is 4, action is to produce 2
+Inventory level 3, backlog 0, demand in last period is 0, action is to produce 2
+Inventory level 3, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 3, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 3, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 3, backlog 0, demand in last period is 4, action is to produce 1
+Inventory level 4, backlog 0, demand in last period is 0, action is to produce 1
+Inventory level 4, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 4, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 4, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 4, backlog 0, demand in last period is 4, action is to produce 0
+
+###### Running Time ######
+4.059936100000001 s
