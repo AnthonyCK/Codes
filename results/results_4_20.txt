@@ -1,0 +1,885 @@
+###### Transition Probability Matrix ######
+[[4.24445811e-02 1.11912840e-01 2.01801984e-01 2.48932839e-01
+  2.10085096e-01 1.21290876e-01 4.78922723e-02 1.29276819e-02
+  2.38423004e-03 3.00232537e-04 2.57946750e-05 1.51088371e-06
+  6.02871484e-08 1.63750829e-09 3.02548927e-11 3.79987387e-13
+  3.26217709e-15 0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.09875783e-02 4.22819517e-02 1.11225374e-01 2.00097446e-01
+  2.46258360e-01 2.07346514e-01 1.19432317e-01 4.70490077e-02
+  1.26705552e-02 2.33137134e-03 2.92891983e-04 2.51052303e-05
+  1.46705890e-06 5.84011741e-08 1.58255458e-09 2.91707582e-11
+  3.65513490e-13 3.11548789e-15 0.00000000e+00 0.00000000e+00]
+ [1.96744997e-03 1.10587576e-02 4.24673864e-02 1.11481232e-01
+  2.00141746e-01 2.45802240e-01 2.06533414e-01 1.18717230e-01
+  4.66702186e-02 1.25424185e-02 2.30298913e-03 2.88722767e-04
+  2.46961395e-05 1.44013060e-06 5.72088946e-08 1.54698677e-09
+  2.84550834e-11 3.55807922e-13 2.99838137e-15 0.00000000e+00]
+ [2.41582444e-04 1.98524779e-03 1.11382903e-02 4.26943321e-02
+  1.11871645e-01 2.00475032e-01 2.45761128e-01 2.06121097e-01
+  1.18263373e-01 4.64066254e-02 1.24487008e-02 2.28158111e-03
+  2.85512320e-04 2.43764860e-05 1.41886310e-06 5.62596657e-08
+  1.51849582e-09 2.78790693e-11 3.47951285e-13 2.99766582e-15]
+ [2.02817468e-05 2.43908279e-04 2.00116217e-03 1.12096947e-02
+  4.28997053e-02 1.12231270e-01 2.00800401e-01 2.45769655e-01
+  2.05801392e-01 1.17892612e-01 4.61876793e-02 1.23702675e-02
+  2.26359509e-03 2.82809614e-04 2.41071308e-05 1.40093704e-06
+  5.54597077e-08 1.49449687e-09 2.73942308e-11 3.41393988e-13]
+ [1.16221635e-06 2.04747690e-05 2.45896379e-04 2.01474915e-03
+  1.12705907e-02 4.30747113e-02 1.12537667e-01 2.01078263e-01
+  2.45779483e-01 2.05533443e-01 1.17581049e-01 4.60037127e-02
+  1.23044174e-02 2.24851078e-03 2.80545672e-04 2.38817935e-05
+  1.38596049e-06 5.47922897e-08 1.47450203e-09 2.69908552e-11]
+ [4.53889536e-08 1.17255615e-06 2.06340066e-05 2.47534393e-04
+  2.02592897e-03 1.13206308e-02 4.32183147e-02 1.12788679e-01
+  2.01305359e-01 2.45786875e-01 2.05313931e-01 1.17326436e-01
+  4.58536184e-02 1.22507684e-02 2.23623792e-03 2.78706101e-04
+  2.36989308e-05 1.37382243e-06 5.42520531e-08 1.45833779e-09]
+ [1.20628396e-09 4.57421738e-08 1.18065920e-06 2.07586685e-05
+  2.48815402e-04 2.03466283e-03 1.13596797e-02 4.33302431e-02
+  1.12984053e-01 2.01481731e-01 2.45792093e-01 2.05142917e-01
+  1.17128531e-01 4.57371179e-02 1.22091767e-02 2.22673385e-03
+  2.77283062e-04 2.35576215e-05 1.36445228e-06 5.38354363e-08]
+ [2.17848664e-11 1.21373166e-09 4.59961032e-08 1.18648000e-06
+  2.08481499e-05 2.49734182e-04 2.04092203e-03 1.13876413e-02
+  4.34103205e-02 1.13123685e-01 2.01607579e-01 2.45795544e-01
+  2.05020621e-01 1.16987244e-01 4.56540330e-02 1.21795410e-02
+  2.21996746e-03 2.76270743e-04 2.34571758e-05 1.35779692e-06]
+ [2.66966072e-13 2.18736252e-11 1.21822336e-09 4.61491759e-08
+  1.18998725e-06 2.09020415e-05 2.50287290e-04 2.04468853e-03
+  1.14044610e-02 4.34584748e-02 1.13207644e-01 2.01683297e-01
+  2.45797824e-01 2.04947453e-01 1.16902652e-01 4.56042933e-02
+  1.21618045e-02 2.21591938e-03 2.75665360e-04 2.33971338e-05]
+ [2.21704075e-15 2.67367477e-13 2.19037921e-11 1.21975215e-09
+  4.62013687e-08 1.19118585e-06 2.09205142e-05 2.50477654e-04
+  2.04599231e-03 1.14103338e-02 4.34755314e-02 1.13238231e-01
+  2.01713151e-01 2.45804200e-01 2.04927751e-01 1.16877139e-01
+  4.55887670e-02 1.21561758e-02 2.21462225e-03 2.75470154e-04]
+ [1.24635787e-17 2.21409895e-15 2.67045935e-13 2.18801687e-11
+  1.21858779e-09 4.61629815e-08 1.19034323e-06 2.09082944e-05
+  2.50362164e-04 2.04530020e-03 1.14078727e-02 4.34714755e-02
+  1.13241510e-01 2.01743631e-01 2.45871355e-01 2.05008763e-01
+  1.16937624e-01 4.56179359e-02 1.21654427e-02 2.21658228e-03]
+ [4.74523822e-20 1.24267304e-17 2.20837843e-15 2.66455432e-13
+  2.18399260e-11 1.21679927e-09 4.61123549e-08 1.18947873e-06
+  2.09008421e-05 2.50365367e-04 2.04608031e-03 1.14164227e-02
+  4.35200368e-02 1.13409597e-01 2.02117127e-01 2.46416774e-01
+  2.05538795e-01 1.17282920e-01 4.57694202e-02 1.22103239e-02]
+ [1.23208382e-22 4.75977082e-20 1.24725663e-17 2.21790549e-15
+  2.67771494e-13 2.19614365e-11 1.22432832e-09 4.64264141e-08
+  1.19832024e-06 2.10691898e-05 2.52537340e-04 2.06509860e-03
+  1.15296049e-02 4.39784043e-02 1.14674139e-01 2.04495622e-01
+  2.49468807e-01 2.08211575e-01 1.18880614e-01 4.64212826e-02]
+ [2.23498226e-25 1.27452345e-22 4.92802974e-20 1.29247571e-17
+  2.30032095e-15 2.77963683e-13 2.28171925e-11 1.27314092e-09
+  4.83192482e-08 1.24825596e-06 2.19661307e-05 2.63515125e-04
+  2.15672221e-03 1.20514866e-02 4.60084736e-02 1.20070275e-01
+  2.14301562e-01 2.61654788e-01 2.18568925e-01 1.24900989e-01]
+ [2.97701547e-28 2.50751978e-25 1.43155084e-22 5.54141219e-20
+  1.45498055e-17 2.59244949e-15 3.13614644e-13 2.57724768e-11
+  1.43964462e-09 5.46994543e-08 1.41465178e-06 2.49219248e-05
+  2.99305504e-04 2.45235620e-03 1.37185829e-02 5.24306144e-02
+  1.36981046e-01 2.44752816e-01 2.99163218e-01 2.50175669e-01]
+ [3.11654012e-31 3.87944477e-28 3.27213043e-25 1.87064021e-22
+  7.25104540e-20 1.90648499e-17 3.40158883e-15 4.12061794e-13
+  3.39090622e-11 1.89673887e-09 7.21650305e-08 1.86889020e-06
+  3.29689468e-05 3.96484541e-04 3.25298456e-03 1.82218933e-02
+  6.97355171e-02 1.82437283e-01 3.26410630e-01 3.99510296e-01]
+ [2.74205323e-34 5.04701691e-31 6.29272249e-28 5.31625805e-25
+  3.04418860e-22 1.18191728e-19 3.11260677e-17 5.56257956e-15
+  6.74930982e-13 5.56306754e-11 3.11678236e-09 1.18774950e-07
+  3.08091440e-06 5.44373926e-05 6.55712540e-04 5.38843738e-03
+  3.02319842e-02 1.15882630e-01 3.03646406e-01 5.44137190e-01]
+ [2.13800567e-37 5.82162775e-34 1.07354334e-30 1.34103200e-27
+  1.13506764e-24 6.51180942e-22 2.53297480e-19 6.68314411e-17
+  1.19658788e-14 1.45458271e-12 1.20116554e-10 6.74222347e-09
+  2.57411656e-07 6.68941487e-06 1.18415720e-04 1.42898428e-03
+  1.17645989e-02 6.61271438e-02 2.53938740e-01 6.66615163e-01]
+ [1.53286498e-40 6.17758544e-37 1.68569885e-33 3.11515928e-30
+  3.89963821e-27 3.30773519e-24 1.90166367e-21 7.41284723e-19
+  1.96000042e-16 3.51673770e-14 4.28403089e-12 3.54514862e-10
+  1.99411693e-08 7.62939219e-07 1.98683761e-05 3.52447384e-04
+  4.26207641e-03 3.51623546e-02 1.98055058e-01 7.62147412e-01]]
+
+###### Optimal Solutions ######
+Inventory level 0, backlog 0, demand in last period is 0, action is to produce 20
+Inventory level 0, backlog 0, demand in last period is 1, action is to produce 9
+Inventory level 0, backlog 0, demand in last period is 2, action is to produce 10
+Inventory level 0, backlog 0, demand in last period is 3, action is to produce 11
+Inventory level 0, backlog 0, demand in last period is 4, action is to produce 12
+Inventory level 0, backlog 0, demand in last period is 5, action is to produce 13
+Inventory level 0, backlog 0, demand in last period is 6, action is to produce 14
+Inventory level 0, backlog 0, demand in last period is 7, action is to produce 15
+Inventory level 0, backlog 0, demand in last period is 8, action is to produce 16
+Inventory level 0, backlog 0, demand in last period is 9, action is to produce 17
+Inventory level 0, backlog 0, demand in last period is 10, action is to produce 18
+Inventory level 0, backlog 0, demand in last period is 11, action is to produce 19
+Inventory level 0, backlog 0, demand in last period is 12, action is to produce 19
+Inventory level 0, backlog 0, demand in last period is 13, action is to produce 19
+Inventory level 0, backlog 0, demand in last period is 14, action is to produce 19
+Inventory level 0, backlog 0, demand in last period is 15, action is to produce 19
+Inventory level 0, backlog 0, demand in last period is 16, action is to produce 19
+Inventory level 0, backlog 0, demand in last period is 17, action is to produce 19
+Inventory level 0, backlog 0, demand in last period is 18, action is to produce 19
+Inventory level 0, backlog 0, demand in last period is 19, action is to produce 19
+Inventory level 0, backlog 1, demand in last period is 0, action is to produce 9
+Inventory level 0, backlog 1, demand in last period is 1, action is to produce 10
+Inventory level 0, backlog 1, demand in last period is 2, action is to produce 11
+Inventory level 0, backlog 1, demand in last period is 3, action is to produce 12
+Inventory level 0, backlog 1, demand in last period is 4, action is to produce 13
+Inventory level 0, backlog 1, demand in last period is 5, action is to produce 14
+Inventory level 0, backlog 1, demand in last period is 6, action is to produce 15
+Inventory level 0, backlog 1, demand in last period is 7, action is to produce 16
+Inventory level 0, backlog 1, demand in last period is 8, action is to produce 17
+Inventory level 0, backlog 1, demand in last period is 9, action is to produce 18
+Inventory level 0, backlog 1, demand in last period is 10, action is to produce 19
+Inventory level 0, backlog 1, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 1, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 1, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 1, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 1, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 1, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 1, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 1, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 1, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 2, demand in last period is 0, action is to produce 10
+Inventory level 0, backlog 2, demand in last period is 1, action is to produce 11
+Inventory level 0, backlog 2, demand in last period is 2, action is to produce 12
+Inventory level 0, backlog 2, demand in last period is 3, action is to produce 13
+Inventory level 0, backlog 2, demand in last period is 4, action is to produce 14
+Inventory level 0, backlog 2, demand in last period is 5, action is to produce 15
+Inventory level 0, backlog 2, demand in last period is 6, action is to produce 16
+Inventory level 0, backlog 2, demand in last period is 7, action is to produce 17
+Inventory level 0, backlog 2, demand in last period is 8, action is to produce 18
+Inventory level 0, backlog 2, demand in last period is 9, action is to produce 19
+Inventory level 0, backlog 2, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 2, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 2, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 2, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 2, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 2, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 2, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 2, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 2, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 2, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 0, action is to produce 11
+Inventory level 0, backlog 3, demand in last period is 1, action is to produce 12
+Inventory level 0, backlog 3, demand in last period is 2, action is to produce 13
+Inventory level 0, backlog 3, demand in last period is 3, action is to produce 14
+Inventory level 0, backlog 3, demand in last period is 4, action is to produce 15
+Inventory level 0, backlog 3, demand in last period is 5, action is to produce 16
+Inventory level 0, backlog 3, demand in last period is 6, action is to produce 17
+Inventory level 0, backlog 3, demand in last period is 7, action is to produce 18
+Inventory level 0, backlog 3, demand in last period is 8, action is to produce 19
+Inventory level 0, backlog 3, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 3, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 0, action is to produce 12
+Inventory level 0, backlog 4, demand in last period is 1, action is to produce 13
+Inventory level 0, backlog 4, demand in last period is 2, action is to produce 14
+Inventory level 0, backlog 4, demand in last period is 3, action is to produce 15
+Inventory level 0, backlog 4, demand in last period is 4, action is to produce 16
+Inventory level 0, backlog 4, demand in last period is 5, action is to produce 17
+Inventory level 0, backlog 4, demand in last period is 6, action is to produce 18
+Inventory level 0, backlog 4, demand in last period is 7, action is to produce 19
+Inventory level 0, backlog 4, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 4, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 0, action is to produce 13
+Inventory level 0, backlog 5, demand in last period is 1, action is to produce 14
+Inventory level 0, backlog 5, demand in last period is 2, action is to produce 15
+Inventory level 0, backlog 5, demand in last period is 3, action is to produce 16
+Inventory level 0, backlog 5, demand in last period is 4, action is to produce 17
+Inventory level 0, backlog 5, demand in last period is 5, action is to produce 18
+Inventory level 0, backlog 5, demand in last period is 6, action is to produce 19
+Inventory level 0, backlog 5, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 5, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 0, action is to produce 14
+Inventory level 0, backlog 6, demand in last period is 1, action is to produce 15
+Inventory level 0, backlog 6, demand in last period is 2, action is to produce 16
+Inventory level 0, backlog 6, demand in last period is 3, action is to produce 17
+Inventory level 0, backlog 6, demand in last period is 4, action is to produce 18
+Inventory level 0, backlog 6, demand in last period is 5, action is to produce 19
+Inventory level 0, backlog 6, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 6, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 0, action is to produce 15
+Inventory level 0, backlog 7, demand in last period is 1, action is to produce 16
+Inventory level 0, backlog 7, demand in last period is 2, action is to produce 17
+Inventory level 0, backlog 7, demand in last period is 3, action is to produce 18
+Inventory level 0, backlog 7, demand in last period is 4, action is to produce 19
+Inventory level 0, backlog 7, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 7, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 0, action is to produce 16
+Inventory level 0, backlog 8, demand in last period is 1, action is to produce 17
+Inventory level 0, backlog 8, demand in last period is 2, action is to produce 18
+Inventory level 0, backlog 8, demand in last period is 3, action is to produce 19
+Inventory level 0, backlog 8, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 8, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 0, action is to produce 17
+Inventory level 0, backlog 9, demand in last period is 1, action is to produce 18
+Inventory level 0, backlog 9, demand in last period is 2, action is to produce 19
+Inventory level 0, backlog 9, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 9, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 0, action is to produce 18
+Inventory level 0, backlog 10, demand in last period is 1, action is to produce 19
+Inventory level 0, backlog 10, demand in last period is 2, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 10, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 0, action is to produce 19
+Inventory level 0, backlog 11, demand in last period is 1, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 2, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 11, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 0, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 1, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 2, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 12, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 0, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 1, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 2, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 13, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 0, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 1, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 2, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 14, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 0, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 1, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 2, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 15, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 0, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 1, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 2, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 16, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 0, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 1, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 2, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 17, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 0, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 1, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 2, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 18, demand in last period is 19, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 0, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 1, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 2, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 3, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 4, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 5, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 6, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 7, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 8, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 9, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 10, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 11, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 12, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 13, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 14, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 15, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 16, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 17, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 18, action is to produce 20
+Inventory level 0, backlog 19, demand in last period is 19, action is to produce 20
+Inventory level 1, backlog 0, demand in last period is 0, action is to produce 19
+Inventory level 1, backlog 0, demand in last period is 1, action is to produce 8
+Inventory level 1, backlog 0, demand in last period is 2, action is to produce 9
+Inventory level 1, backlog 0, demand in last period is 3, action is to produce 10
+Inventory level 1, backlog 0, demand in last period is 4, action is to produce 11
+Inventory level 1, backlog 0, demand in last period is 5, action is to produce 12
+Inventory level 1, backlog 0, demand in last period is 6, action is to produce 13
+Inventory level 1, backlog 0, demand in last period is 7, action is to produce 14
+Inventory level 1, backlog 0, demand in last period is 8, action is to produce 15
+Inventory level 1, backlog 0, demand in last period is 9, action is to produce 16
+Inventory level 1, backlog 0, demand in last period is 10, action is to produce 17
+Inventory level 1, backlog 0, demand in last period is 11, action is to produce 18
+Inventory level 1, backlog 0, demand in last period is 12, action is to produce 18
+Inventory level 1, backlog 0, demand in last period is 13, action is to produce 18
+Inventory level 1, backlog 0, demand in last period is 14, action is to produce 18
+Inventory level 1, backlog 0, demand in last period is 15, action is to produce 18
+Inventory level 1, backlog 0, demand in last period is 16, action is to produce 18
+Inventory level 1, backlog 0, demand in last period is 17, action is to produce 18
+Inventory level 1, backlog 0, demand in last period is 18, action is to produce 18
+Inventory level 1, backlog 0, demand in last period is 19, action is to produce 18
+Inventory level 2, backlog 0, demand in last period is 0, action is to produce 18
+Inventory level 2, backlog 0, demand in last period is 1, action is to produce 7
+Inventory level 2, backlog 0, demand in last period is 2, action is to produce 8
+Inventory level 2, backlog 0, demand in last period is 3, action is to produce 9
+Inventory level 2, backlog 0, demand in last period is 4, action is to produce 10
+Inventory level 2, backlog 0, demand in last period is 5, action is to produce 11
+Inventory level 2, backlog 0, demand in last period is 6, action is to produce 12
+Inventory level 2, backlog 0, demand in last period is 7, action is to produce 13
+Inventory level 2, backlog 0, demand in last period is 8, action is to produce 14
+Inventory level 2, backlog 0, demand in last period is 9, action is to produce 15
+Inventory level 2, backlog 0, demand in last period is 10, action is to produce 16
+Inventory level 2, backlog 0, demand in last period is 11, action is to produce 17
+Inventory level 2, backlog 0, demand in last period is 12, action is to produce 17
+Inventory level 2, backlog 0, demand in last period is 13, action is to produce 17
+Inventory level 2, backlog 0, demand in last period is 14, action is to produce 17
+Inventory level 2, backlog 0, demand in last period is 15, action is to produce 17
+Inventory level 2, backlog 0, demand in last period is 16, action is to produce 17
+Inventory level 2, backlog 0, demand in last period is 17, action is to produce 17
+Inventory level 2, backlog 0, demand in last period is 18, action is to produce 17
+Inventory level 2, backlog 0, demand in last period is 19, action is to produce 17
+Inventory level 3, backlog 0, demand in last period is 0, action is to produce 17
+Inventory level 3, backlog 0, demand in last period is 1, action is to produce 6
+Inventory level 3, backlog 0, demand in last period is 2, action is to produce 7
+Inventory level 3, backlog 0, demand in last period is 3, action is to produce 8
+Inventory level 3, backlog 0, demand in last period is 4, action is to produce 9
+Inventory level 3, backlog 0, demand in last period is 5, action is to produce 10
+Inventory level 3, backlog 0, demand in last period is 6, action is to produce 11
+Inventory level 3, backlog 0, demand in last period is 7, action is to produce 12
+Inventory level 3, backlog 0, demand in last period is 8, action is to produce 13
+Inventory level 3, backlog 0, demand in last period is 9, action is to produce 14
+Inventory level 3, backlog 0, demand in last period is 10, action is to produce 15
+Inventory level 3, backlog 0, demand in last period is 11, action is to produce 16
+Inventory level 3, backlog 0, demand in last period is 12, action is to produce 16
+Inventory level 3, backlog 0, demand in last period is 13, action is to produce 16
+Inventory level 3, backlog 0, demand in last period is 14, action is to produce 16
+Inventory level 3, backlog 0, demand in last period is 15, action is to produce 16
+Inventory level 3, backlog 0, demand in last period is 16, action is to produce 16
+Inventory level 3, backlog 0, demand in last period is 17, action is to produce 16
+Inventory level 3, backlog 0, demand in last period is 18, action is to produce 16
+Inventory level 3, backlog 0, demand in last period is 19, action is to produce 16
+Inventory level 4, backlog 0, demand in last period is 0, action is to produce 16
+Inventory level 4, backlog 0, demand in last period is 1, action is to produce 5
+Inventory level 4, backlog 0, demand in last period is 2, action is to produce 6
+Inventory level 4, backlog 0, demand in last period is 3, action is to produce 7
+Inventory level 4, backlog 0, demand in last period is 4, action is to produce 8
+Inventory level 4, backlog 0, demand in last period is 5, action is to produce 9
+Inventory level 4, backlog 0, demand in last period is 6, action is to produce 10
+Inventory level 4, backlog 0, demand in last period is 7, action is to produce 11
+Inventory level 4, backlog 0, demand in last period is 8, action is to produce 12
+Inventory level 4, backlog 0, demand in last period is 9, action is to produce 13
+Inventory level 4, backlog 0, demand in last period is 10, action is to produce 14
+Inventory level 4, backlog 0, demand in last period is 11, action is to produce 15
+Inventory level 4, backlog 0, demand in last period is 12, action is to produce 15
+Inventory level 4, backlog 0, demand in last period is 13, action is to produce 15
+Inventory level 4, backlog 0, demand in last period is 14, action is to produce 15
+Inventory level 4, backlog 0, demand in last period is 15, action is to produce 15
+Inventory level 4, backlog 0, demand in last period is 16, action is to produce 15
+Inventory level 4, backlog 0, demand in last period is 17, action is to produce 15
+Inventory level 4, backlog 0, demand in last period is 18, action is to produce 15
+Inventory level 4, backlog 0, demand in last period is 19, action is to produce 15
+Inventory level 5, backlog 0, demand in last period is 0, action is to produce 15
+Inventory level 5, backlog 0, demand in last period is 1, action is to produce 4
+Inventory level 5, backlog 0, demand in last period is 2, action is to produce 5
+Inventory level 5, backlog 0, demand in last period is 3, action is to produce 6
+Inventory level 5, backlog 0, demand in last period is 4, action is to produce 7
+Inventory level 5, backlog 0, demand in last period is 5, action is to produce 8
+Inventory level 5, backlog 0, demand in last period is 6, action is to produce 9
+Inventory level 5, backlog 0, demand in last period is 7, action is to produce 10
+Inventory level 5, backlog 0, demand in last period is 8, action is to produce 11
+Inventory level 5, backlog 0, demand in last period is 9, action is to produce 12
+Inventory level 5, backlog 0, demand in last period is 10, action is to produce 13
+Inventory level 5, backlog 0, demand in last period is 11, action is to produce 14
+Inventory level 5, backlog 0, demand in last period is 12, action is to produce 14
+Inventory level 5, backlog 0, demand in last period is 13, action is to produce 14
+Inventory level 5, backlog 0, demand in last period is 14, action is to produce 14
+Inventory level 5, backlog 0, demand in last period is 15, action is to produce 14
+Inventory level 5, backlog 0, demand in last period is 16, action is to produce 14
+Inventory level 5, backlog 0, demand in last period is 17, action is to produce 14
+Inventory level 5, backlog 0, demand in last period is 18, action is to produce 14
+Inventory level 5, backlog 0, demand in last period is 19, action is to produce 14
+Inventory level 6, backlog 0, demand in last period is 0, action is to produce 14
+Inventory level 6, backlog 0, demand in last period is 1, action is to produce 3
+Inventory level 6, backlog 0, demand in last period is 2, action is to produce 4
+Inventory level 6, backlog 0, demand in last period is 3, action is to produce 5
+Inventory level 6, backlog 0, demand in last period is 4, action is to produce 6
+Inventory level 6, backlog 0, demand in last period is 5, action is to produce 7
+Inventory level 6, backlog 0, demand in last period is 6, action is to produce 8
+Inventory level 6, backlog 0, demand in last period is 7, action is to produce 9
+Inventory level 6, backlog 0, demand in last period is 8, action is to produce 10
+Inventory level 6, backlog 0, demand in last period is 9, action is to produce 11
+Inventory level 6, backlog 0, demand in last period is 10, action is to produce 12
+Inventory level 6, backlog 0, demand in last period is 11, action is to produce 13
+Inventory level 6, backlog 0, demand in last period is 12, action is to produce 13
+Inventory level 6, backlog 0, demand in last period is 13, action is to produce 13
+Inventory level 6, backlog 0, demand in last period is 14, action is to produce 13
+Inventory level 6, backlog 0, demand in last period is 15, action is to produce 13
+Inventory level 6, backlog 0, demand in last period is 16, action is to produce 13
+Inventory level 6, backlog 0, demand in last period is 17, action is to produce 13
+Inventory level 6, backlog 0, demand in last period is 18, action is to produce 13
+Inventory level 6, backlog 0, demand in last period is 19, action is to produce 13
+Inventory level 7, backlog 0, demand in last period is 0, action is to produce 13
+Inventory level 7, backlog 0, demand in last period is 1, action is to produce 2
+Inventory level 7, backlog 0, demand in last period is 2, action is to produce 3
+Inventory level 7, backlog 0, demand in last period is 3, action is to produce 4
+Inventory level 7, backlog 0, demand in last period is 4, action is to produce 5
+Inventory level 7, backlog 0, demand in last period is 5, action is to produce 6
+Inventory level 7, backlog 0, demand in last period is 6, action is to produce 7
+Inventory level 7, backlog 0, demand in last period is 7, action is to produce 8
+Inventory level 7, backlog 0, demand in last period is 8, action is to produce 9
+Inventory level 7, backlog 0, demand in last period is 9, action is to produce 10
+Inventory level 7, backlog 0, demand in last period is 10, action is to produce 11
+Inventory level 7, backlog 0, demand in last period is 11, action is to produce 12
+Inventory level 7, backlog 0, demand in last period is 12, action is to produce 12
+Inventory level 7, backlog 0, demand in last period is 13, action is to produce 12
+Inventory level 7, backlog 0, demand in last period is 14, action is to produce 12
+Inventory level 7, backlog 0, demand in last period is 15, action is to produce 12
+Inventory level 7, backlog 0, demand in last period is 16, action is to produce 12
+Inventory level 7, backlog 0, demand in last period is 17, action is to produce 12
+Inventory level 7, backlog 0, demand in last period is 18, action is to produce 12
+Inventory level 7, backlog 0, demand in last period is 19, action is to produce 12
+Inventory level 8, backlog 0, demand in last period is 0, action is to produce 12
+Inventory level 8, backlog 0, demand in last period is 1, action is to produce 1
+Inventory level 8, backlog 0, demand in last period is 2, action is to produce 2
+Inventory level 8, backlog 0, demand in last period is 3, action is to produce 3
+Inventory level 8, backlog 0, demand in last period is 4, action is to produce 4
+Inventory level 8, backlog 0, demand in last period is 5, action is to produce 5
+Inventory level 8, backlog 0, demand in last period is 6, action is to produce 6
+Inventory level 8, backlog 0, demand in last period is 7, action is to produce 7
+Inventory level 8, backlog 0, demand in last period is 8, action is to produce 8
+Inventory level 8, backlog 0, demand in last period is 9, action is to produce 9
+Inventory level 8, backlog 0, demand in last period is 10, action is to produce 10
+Inventory level 8, backlog 0, demand in last period is 11, action is to produce 11
+Inventory level 8, backlog 0, demand in last period is 12, action is to produce 11
+Inventory level 8, backlog 0, demand in last period is 13, action is to produce 11
+Inventory level 8, backlog 0, demand in last period is 14, action is to produce 11
+Inventory level 8, backlog 0, demand in last period is 15, action is to produce 11
+Inventory level 8, backlog 0, demand in last period is 16, action is to produce 11
+Inventory level 8, backlog 0, demand in last period is 17, action is to produce 11
+Inventory level 8, backlog 0, demand in last period is 18, action is to produce 11
+Inventory level 8, backlog 0, demand in last period is 19, action is to produce 11
+Inventory level 9, backlog 0, demand in last period is 0, action is to produce 11
+Inventory level 9, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 9, backlog 0, demand in last period is 2, action is to produce 1
+Inventory level 9, backlog 0, demand in last period is 3, action is to produce 2
+Inventory level 9, backlog 0, demand in last period is 4, action is to produce 3
+Inventory level 9, backlog 0, demand in last period is 5, action is to produce 4
+Inventory level 9, backlog 0, demand in last period is 6, action is to produce 5
+Inventory level 9, backlog 0, demand in last period is 7, action is to produce 6
+Inventory level 9, backlog 0, demand in last period is 8, action is to produce 7
+Inventory level 9, backlog 0, demand in last period is 9, action is to produce 8
+Inventory level 9, backlog 0, demand in last period is 10, action is to produce 9
+Inventory level 9, backlog 0, demand in last period is 11, action is to produce 10
+Inventory level 9, backlog 0, demand in last period is 12, action is to produce 10
+Inventory level 9, backlog 0, demand in last period is 13, action is to produce 10
+Inventory level 9, backlog 0, demand in last period is 14, action is to produce 10
+Inventory level 9, backlog 0, demand in last period is 15, action is to produce 10
+Inventory level 9, backlog 0, demand in last period is 16, action is to produce 10
+Inventory level 9, backlog 0, demand in last period is 17, action is to produce 10
+Inventory level 9, backlog 0, demand in last period is 18, action is to produce 10
+Inventory level 9, backlog 0, demand in last period is 19, action is to produce 10
+Inventory level 10, backlog 0, demand in last period is 0, action is to produce 10
+Inventory level 10, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 10, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 10, backlog 0, demand in last period is 3, action is to produce 1
+Inventory level 10, backlog 0, demand in last period is 4, action is to produce 2
+Inventory level 10, backlog 0, demand in last period is 5, action is to produce 3
+Inventory level 10, backlog 0, demand in last period is 6, action is to produce 4
+Inventory level 10, backlog 0, demand in last period is 7, action is to produce 5
+Inventory level 10, backlog 0, demand in last period is 8, action is to produce 6
+Inventory level 10, backlog 0, demand in last period is 9, action is to produce 7
+Inventory level 10, backlog 0, demand in last period is 10, action is to produce 8
+Inventory level 10, backlog 0, demand in last period is 11, action is to produce 9
+Inventory level 10, backlog 0, demand in last period is 12, action is to produce 9
+Inventory level 10, backlog 0, demand in last period is 13, action is to produce 9
+Inventory level 10, backlog 0, demand in last period is 14, action is to produce 9
+Inventory level 10, backlog 0, demand in last period is 15, action is to produce 9
+Inventory level 10, backlog 0, demand in last period is 16, action is to produce 9
+Inventory level 10, backlog 0, demand in last period is 17, action is to produce 9
+Inventory level 10, backlog 0, demand in last period is 18, action is to produce 9
+Inventory level 10, backlog 0, demand in last period is 19, action is to produce 9
+Inventory level 11, backlog 0, demand in last period is 0, action is to produce 9
+Inventory level 11, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 11, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 11, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 11, backlog 0, demand in last period is 4, action is to produce 1
+Inventory level 11, backlog 0, demand in last period is 5, action is to produce 2
+Inventory level 11, backlog 0, demand in last period is 6, action is to produce 3
+Inventory level 11, backlog 0, demand in last period is 7, action is to produce 4
+Inventory level 11, backlog 0, demand in last period is 8, action is to produce 5
+Inventory level 11, backlog 0, demand in last period is 9, action is to produce 6
+Inventory level 11, backlog 0, demand in last period is 10, action is to produce 7
+Inventory level 11, backlog 0, demand in last period is 11, action is to produce 8
+Inventory level 11, backlog 0, demand in last period is 12, action is to produce 8
+Inventory level 11, backlog 0, demand in last period is 13, action is to produce 8
+Inventory level 11, backlog 0, demand in last period is 14, action is to produce 8
+Inventory level 11, backlog 0, demand in last period is 15, action is to produce 8
+Inventory level 11, backlog 0, demand in last period is 16, action is to produce 8
+Inventory level 11, backlog 0, demand in last period is 17, action is to produce 8
+Inventory level 11, backlog 0, demand in last period is 18, action is to produce 8
+Inventory level 11, backlog 0, demand in last period is 19, action is to produce 8
+Inventory level 12, backlog 0, demand in last period is 0, action is to produce 8
+Inventory level 12, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 12, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 12, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 12, backlog 0, demand in last period is 4, action is to produce 0
+Inventory level 12, backlog 0, demand in last period is 5, action is to produce 1
+Inventory level 12, backlog 0, demand in last period is 6, action is to produce 2
+Inventory level 12, backlog 0, demand in last period is 7, action is to produce 3
+Inventory level 12, backlog 0, demand in last period is 8, action is to produce 4
+Inventory level 12, backlog 0, demand in last period is 9, action is to produce 5
+Inventory level 12, backlog 0, demand in last period is 10, action is to produce 6
+Inventory level 12, backlog 0, demand in last period is 11, action is to produce 7
+Inventory level 12, backlog 0, demand in last period is 12, action is to produce 7
+Inventory level 12, backlog 0, demand in last period is 13, action is to produce 7
+Inventory level 12, backlog 0, demand in last period is 14, action is to produce 7
+Inventory level 12, backlog 0, demand in last period is 15, action is to produce 7
+Inventory level 12, backlog 0, demand in last period is 16, action is to produce 7
+Inventory level 12, backlog 0, demand in last period is 17, action is to produce 7
+Inventory level 12, backlog 0, demand in last period is 18, action is to produce 7
+Inventory level 12, backlog 0, demand in last period is 19, action is to produce 7
+Inventory level 13, backlog 0, demand in last period is 0, action is to produce 7
+Inventory level 13, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 13, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 13, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 13, backlog 0, demand in last period is 4, action is to produce 0
+Inventory level 13, backlog 0, demand in last period is 5, action is to produce 0
+Inventory level 13, backlog 0, demand in last period is 6, action is to produce 1
+Inventory level 13, backlog 0, demand in last period is 7, action is to produce 2
+Inventory level 13, backlog 0, demand in last period is 8, action is to produce 3
+Inventory level 13, backlog 0, demand in last period is 9, action is to produce 4
+Inventory level 13, backlog 0, demand in last period is 10, action is to produce 5
+Inventory level 13, backlog 0, demand in last period is 11, action is to produce 6
+Inventory level 13, backlog 0, demand in last period is 12, action is to produce 6
+Inventory level 13, backlog 0, demand in last period is 13, action is to produce 6
+Inventory level 13, backlog 0, demand in last period is 14, action is to produce 6
+Inventory level 13, backlog 0, demand in last period is 15, action is to produce 6
+Inventory level 13, backlog 0, demand in last period is 16, action is to produce 6
+Inventory level 13, backlog 0, demand in last period is 17, action is to produce 6
+Inventory level 13, backlog 0, demand in last period is 18, action is to produce 6
+Inventory level 13, backlog 0, demand in last period is 19, action is to produce 6
+Inventory level 14, backlog 0, demand in last period is 0, action is to produce 6
+Inventory level 14, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 14, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 14, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 14, backlog 0, demand in last period is 4, action is to produce 0
+Inventory level 14, backlog 0, demand in last period is 5, action is to produce 0
+Inventory level 14, backlog 0, demand in last period is 6, action is to produce 0
+Inventory level 14, backlog 0, demand in last period is 7, action is to produce 1
+Inventory level 14, backlog 0, demand in last period is 8, action is to produce 2
+Inventory level 14, backlog 0, demand in last period is 9, action is to produce 3
+Inventory level 14, backlog 0, demand in last period is 10, action is to produce 4
+Inventory level 14, backlog 0, demand in last period is 11, action is to produce 5
+Inventory level 14, backlog 0, demand in last period is 12, action is to produce 5
+Inventory level 14, backlog 0, demand in last period is 13, action is to produce 5
+Inventory level 14, backlog 0, demand in last period is 14, action is to produce 5
+Inventory level 14, backlog 0, demand in last period is 15, action is to produce 5
+Inventory level 14, backlog 0, demand in last period is 16, action is to produce 5
+Inventory level 14, backlog 0, demand in last period is 17, action is to produce 5
+Inventory level 14, backlog 0, demand in last period is 18, action is to produce 5
+Inventory level 14, backlog 0, demand in last period is 19, action is to produce 5
+Inventory level 15, backlog 0, demand in last period is 0, action is to produce 5
+Inventory level 15, backlog 0, demand in last period is 1, action is to produce 0
+Inventory level 15, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 15, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 15, backlog 0, demand in last period is 4, action is to produce 0
+Inventory level 15, backlog 0, demand in last period is 5, action is to produce 0
+Inventory level 15, backlog 0, demand in last period is 6, action is to produce 0
+Inventory level 15, backlog 0, demand in last period is 7, action is to produce 0
+Inventory level 15, backlog 0, demand in last period is 8, action is to produce 1
+Inventory level 15, backlog 0, demand in last period is 9, action is to produce 2
+Inventory level 15, backlog 0, demand in last period is 10, action is to produce 3
+Inventory level 15, backlog 0, demand in last period is 11, action is to produce 4
+Inventory level 15, backlog 0, demand in last period is 12, action is to produce 4
+Inventory level 15, backlog 0, demand in last period is 13, action is to produce 4
+Inventory level 15, backlog 0, demand in last period is 14, action is to produce 4
+Inventory level 15, backlog 0, demand in last period is 15, action is to produce 4
+Inventory level 15, backlog 0, demand in last period is 16, action is to produce 4
+Inventory level 15, backlog 0, demand in last period is 17, action is to produce 4
+Inventory level 15, backlog 0, demand in last period is 18, action is to produce 4
+Inventory level 15, backlog 0, demand in last period is 19, action is to produce 4
+Inventory level 16, backlog 0, demand in last period is 0, action is to produce 4
+Inventory level 16, backlog 0, demand in last period is 1, action is to produce 4
+Inventory level 16, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 16, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 16, backlog 0, demand in last period is 4, action is to produce 0
+Inventory level 16, backlog 0, demand in last period is 5, action is to produce 0
+Inventory level 16, backlog 0, demand in last period is 6, action is to produce 0
+Inventory level 16, backlog 0, demand in last period is 7, action is to produce 0
+Inventory level 16, backlog 0, demand in last period is 8, action is to produce 0
+Inventory level 16, backlog 0, demand in last period is 9, action is to produce 1
+Inventory level 16, backlog 0, demand in last period is 10, action is to produce 2
+Inventory level 16, backlog 0, demand in last period is 11, action is to produce 3
+Inventory level 16, backlog 0, demand in last period is 12, action is to produce 3
+Inventory level 16, backlog 0, demand in last period is 13, action is to produce 3
+Inventory level 16, backlog 0, demand in last period is 14, action is to produce 3
+Inventory level 16, backlog 0, demand in last period is 15, action is to produce 3
+Inventory level 16, backlog 0, demand in last period is 16, action is to produce 3
+Inventory level 16, backlog 0, demand in last period is 17, action is to produce 3
+Inventory level 16, backlog 0, demand in last period is 18, action is to produce 3
+Inventory level 16, backlog 0, demand in last period is 19, action is to produce 3
+Inventory level 17, backlog 0, demand in last period is 0, action is to produce 3
+Inventory level 17, backlog 0, demand in last period is 1, action is to produce 3
+Inventory level 17, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 17, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 17, backlog 0, demand in last period is 4, action is to produce 0
+Inventory level 17, backlog 0, demand in last period is 5, action is to produce 0
+Inventory level 17, backlog 0, demand in last period is 6, action is to produce 0
+Inventory level 17, backlog 0, demand in last period is 7, action is to produce 0
+Inventory level 17, backlog 0, demand in last period is 8, action is to produce 0
+Inventory level 17, backlog 0, demand in last period is 9, action is to produce 0
+Inventory level 17, backlog 0, demand in last period is 10, action is to produce 1
+Inventory level 17, backlog 0, demand in last period is 11, action is to produce 2
+Inventory level 17, backlog 0, demand in last period is 12, action is to produce 2
+Inventory level 17, backlog 0, demand in last period is 13, action is to produce 2
+Inventory level 17, backlog 0, demand in last period is 14, action is to produce 2
+Inventory level 17, backlog 0, demand in last period is 15, action is to produce 2
+Inventory level 17, backlog 0, demand in last period is 16, action is to produce 2
+Inventory level 17, backlog 0, demand in last period is 17, action is to produce 2
+Inventory level 17, backlog 0, demand in last period is 18, action is to produce 2
+Inventory level 17, backlog 0, demand in last period is 19, action is to produce 2
+Inventory level 18, backlog 0, demand in last period is 0, action is to produce 2
+Inventory level 18, backlog 0, demand in last period is 1, action is to produce 2
+Inventory level 18, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 18, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 18, backlog 0, demand in last period is 4, action is to produce 0
+Inventory level 18, backlog 0, demand in last period is 5, action is to produce 0
+Inventory level 18, backlog 0, demand in last period is 6, action is to produce 0
+Inventory level 18, backlog 0, demand in last period is 7, action is to produce 0
+Inventory level 18, backlog 0, demand in last period is 8, action is to produce 0
+Inventory level 18, backlog 0, demand in last period is 9, action is to produce 0
+Inventory level 18, backlog 0, demand in last period is 10, action is to produce 0
+Inventory level 18, backlog 0, demand in last period is 11, action is to produce 0
+Inventory level 18, backlog 0, demand in last period is 12, action is to produce 1
+Inventory level 18, backlog 0, demand in last period is 13, action is to produce 1
+Inventory level 18, backlog 0, demand in last period is 14, action is to produce 1
+Inventory level 18, backlog 0, demand in last period is 15, action is to produce 1
+Inventory level 18, backlog 0, demand in last period is 16, action is to produce 1
+Inventory level 18, backlog 0, demand in last period is 17, action is to produce 1
+Inventory level 18, backlog 0, demand in last period is 18, action is to produce 1
+Inventory level 18, backlog 0, demand in last period is 19, action is to produce 1
+Inventory level 19, backlog 0, demand in last period is 0, action is to produce 1
+Inventory level 19, backlog 0, demand in last period is 1, action is to produce 1
+Inventory level 19, backlog 0, demand in last period is 2, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 3, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 4, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 5, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 6, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 7, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 8, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 9, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 10, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 11, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 12, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 13, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 14, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 15, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 16, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 17, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 18, action is to produce 0
+Inventory level 19, backlog 0, demand in last period is 19, action is to produce 0
+
+###### Running Time ######

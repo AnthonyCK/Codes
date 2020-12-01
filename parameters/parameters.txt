@@ -1,7 +1,7 @@
 {"fixed holding cost":0,
-"variable holding cost":1,
-"fixed production cost":1000,
-"variable production cost":2,
+"variable holding cost":2.3,
+"fixed production cost":1e5,
+"variable production cost":23,
 "fixed backlog cost":0,
-"variable backlog cost":1000,
+"variable backlog cost":2433,
 "lambda":0.9}

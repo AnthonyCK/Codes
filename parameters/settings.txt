@@ -1,4 +1,5 @@
-{"M":50000000,
+{"outputFile":"results_4_20.txt",
+"M":4e6,
 "num level":20,
 "max s":20,
 "max b":20,
