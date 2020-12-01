@@ -1,5 +1,6 @@
 import copy
 import os
+import time
 
 import numpy as np
 
@@ -119,6 +120,8 @@ def main():
     """
     Main
     """
+    start = time.perf_counter()
+
     # Load parameters and settings
     doc1 = open("parameters/parameters.txt", "r")
     params = doc1.read()
@@ -147,15 +150,21 @@ def main():
     dirs = 'results/'
     if not os.path.exists(dirs):
         os.makedirs(dirs)
-    doc = open("results/results.txt","w")
+    doc = open("results/{}".format(params2['outputFile']),"w")
     
+    print('###### Transition Probability Matrix ######', file = doc)
     print(tpd, file=doc)
 
     # Value Iteration
     ad = value_iteration(all_states, v0, tpd, dict(params2, **params), unit, 0.01, params['lambda'])
 
     # Print actions for each states
+    print('\n###### Optimal Solutions ######', file = doc)
     print_actions(ad[1], params2, doc)
+
+    end = time.perf_counter()
+    print('\n###### Running Time ######', file = doc)
+    print('{} s'.format(end - start))
     doc.close()
 
 if __name__ == "__main__":
