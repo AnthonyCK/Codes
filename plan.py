@@ -82,7 +82,7 @@ def cost(st, at, params, unit):
 
 def all_actions(state, params):
     invt = state // (params['max D'] * params['max b'])
-    maxproduce = params["max s"] - invt
+    maxproduce = params["max s"] - invt - 1
     bt = (state // params['max D']) % params['max b']
     minproduce = max(bt+params['max D']-params['max b'], 0)
     if maxproduce < minproduce:
@@ -145,7 +145,7 @@ def main():
     # Generate transition probability matrix
     estimate = inference.Estimation(params2['M'], params2['num level'])
     tpd = tpmgenerator.gen_tpmModel2(estimate['a'], estimate['b'], np.math.sqrt((estimate['c']**2+unit**2)/12), 0, estimate['d'], params2['M'], params2['num level'])
-
+    
     # Output files
     dirs = 'results/'
     if not os.path.exists(dirs):
