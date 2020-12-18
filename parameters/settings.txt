@@ -1,4 +1,4 @@
-{"outputFile":"results_test2.txt",
+{"outputFile":"results_107.txt",
 "M":2e6,
 "num level":20,
 "max s":20,
