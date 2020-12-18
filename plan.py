@@ -144,7 +144,7 @@ def main():
     v0 = np.zeros(len(all_states))
     # Generate transition probability matrix
     estimate = inference.Estimation(params2['M'], params2['num level'])
-    tpd = tpmgenerator.gen_tpmModel2(estimate['a'], estimate['b'], estimate['c'], 0, estimate['d'], params2['M'], params2['num level'])
+    tpd = tpmgenerator.gen_tpmModel2(estimate['a'], estimate['b'], np.math.sqrt((estimate['c']**2+unit**2)/12), 0, estimate['d'], params2['M'], params2['num level'])
 
     # Output files
     dirs = 'results/'
@@ -154,6 +154,7 @@ def main():
     
     print('###### Transition Probability Matrix ######', file = doc)
     print(tpd, file=doc)
+    np.save("test",tpd)
 
     # Value Iteration
     ad = value_iteration(all_states, v0, tpd, dict(params2, **params), unit, 0.01, params['lambda'])
